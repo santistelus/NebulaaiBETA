@@ -1,0 +1,187 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#header {
+  background-color: #F7F7F8;
+  display: flex;
+  align-items: center;
+  height: 6%;
+  width: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#banner {
+  background-color: #F7F7F8;
+  display: flex;
+  align-items: center;
+  height: 6%;
+  width: auto;
+
+}
+
+#logo-telus {
+  max-width: 170px;
+  height: auto;
+  border-right: 1.5px solid #CCCCCC;
+}
+
+h1 {
+  color: #4B286D;
+  font-family: Helvetica;
+  font-size: 26px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+#container {
+  display: flex;
+  height: calc(100% - 50px);
+}
+
+#sidebar {
+  background-color: #F7F7F8;
+  color: white;
+  padding: 60px;
+  display: flex;
+  margin-top: 4px;
+  flex-direction: column;
+  font-family: Helvetica;
+  flex: 0 0 auto;
+  
+  border-right: 1px solid #CCCCCC;
+  z-index: 10;
+
+}
+
+#webchat-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: left;
+}
+
+#webchat {
+  width: 99%;
+  height: 87vh;
+}
+
+.button {
+  background-color: #F7F7F8;
+  color: #2A2C2E;
+  font-family: Helvetica;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.button:hover {
+  background-color: #634694;
+  color: #F7F7F8;
+}
+
+#sidebar .button  { 
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.disclaimer-banner {
+  background-color: #F7F7F8;
+  font-family: Helvetica;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer-banner p {
+  margin: 0 0 10px;
+}
+
+.disclaimer-banner button {
+  background-color: #4B286D;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.disclaimer-banner button:hover {
+  background-color: #2B8000;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+#content {
+  font-family: Helvetica;
+  overflow: auto; 
+  max-height: 100vh; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+#container {
+  transition: opacity 0.7s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+#navigator {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.button {
+  margin-left: 10px; 
+}
+
+#footer-disclaimer {
+  background-color: #F7F7F8;
+  color: #4B286D;
+  font-family: Helvetica;
+  font-size: 12px;
+  padding: 0.5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /*box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);*/
+}
+#footer-disclaimer p {
+  margin: auto; /* Ajusta el margen superior e inferior para centrar verticalmente el texto */
+}
+#banner_title {
+  color: #4B286D;
+  font-family: Helvetica;
+  font-size: 2.5vw; /* Cambiar el tamaño del título para que sea relativo al ancho de la pantalla */
+  line-height: 50px;
+  margin: 0;
+  padding: 0 20px;
+}
